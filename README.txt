@@ -3,4 +3,4 @@ Introduction
 
 
 
-Theme for Bergen Maritime website
+Theme for Elprosjekt Trøndelag
