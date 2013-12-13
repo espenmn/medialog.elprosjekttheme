@@ -1,21 +1,21 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '1.0'
 
 setup(name='medialog.elprosjekttheme',
       version=version,
-      description="Medialog Elprosjekt",
+      description="A theme for Plone 4",
       long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
-        "Framework :: Plone",
-        "Programming Language :: Python",
-        ],
-      keywords='Plone Theme',
-      author='EMN',
+                   "Framework :: Plone",
+                   "Programming Language :: Python",
+                   ],
+      keywords='Plone 4 theme',
+      author='Espen Moe-Nilssen',
       author_email='espen@medialog.no',
       url='http://github.com/espenmn/medialog.elprosjekttheme',
       license='GPL',
@@ -24,18 +24,17 @@ setup(name='medialog.elprosjekttheme',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
-          'plonetheme.classic',
-          'medialog.portlet.placeholder',
-          'medialog.subskins',
-          # -*- Extra requirements: -*-
-      ],
+                        'setuptools',
+                        'medialog.subskins',
+                        'medialog.portlet.placeholder',
+                        # -*- Extra requirements: -*-
+                        ],
       entry_points="""
-      # -*- Entry points: -*-
-
-      [z3c.autoinclude.plugin]
-      target = plone
-      """,
+          # -*- Entry points: -*-
+          
+          [z3c.autoinclude.plugin]
+          target = plone
+          """,
       setup_requires=["PasteScript"],
       paster_plugins=["ZopeSkel"],
       )

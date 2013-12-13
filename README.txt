@@ -3,4 +3,4 @@ Introduction
 
 
 
-Theme for Elprosjekt Trøndelag
+Theme for Elprosjekt Trondelag
